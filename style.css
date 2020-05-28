@@ -1,0 +1,101 @@
+body {
+    color: white;
+    background-color: grey;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(110,110,110);
+}
+
+::selection {
+    background-color: rgb(125,125,125);
+}
+
+h1 {
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+/* hovering over the links under the title*/
+#l a:hover {
+    color: rgb(125,125,125);
+}
+
+#c a:hover {
+    color: rgb(125,125,125);
+}
+
+marquee {
+    color: black;
+    font: italic 17px serif ;
+}
+
+#l {
+    font-size: 22px;
+    margin-top: -25px;
+    letter-spacing: 2px;
+}
+ /* The panel on the left */
+#panel {
+    position: absolute;
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    outline-width: 0px;
+    text-indent: 10px;
+    height: 100vh;
+    width: 40%;
+    left: 0px;
+    top: 0px;
+    background-color: black;
+    --border-right: 2px inset maroon;
+} 
+
+ul {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 2%;
+    left: 0;
+    list-style: none;
+    width: 90%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* the list of files in the left panel */
+/* main contents of the page*/
+#contents {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    margin-top: 20px;
+    width: 94%;
+    height: 80%; 
+    --border: 3px solid rgb(110,110,110);
+    margin-left: 2%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+li {
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+li:hover {
+    background-color: rgb(15,15,15);
+}
