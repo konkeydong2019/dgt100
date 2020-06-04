@@ -9,18 +9,31 @@
     
     
 <body>
-    <marquee scrollamount="12" id="a">Congratulations to Ryan Lee for watching the entire first season of Game of Thrones in one sitting.</marquee>
+    <marquee scrollamount="12" id="marquee"></marquee>
     <div id="panel"> <!--THE PANEL ON THE LEFT HAND SIDE. HOUSES THE TITLE, NAVIGATION BUTTONS AND IMAGE LINKS.-->
         <h1>white bridge</h1> <!---->
         <div id="l"><a href="index.html">gallery</a> | <a href="submit.html">submit</a> | <a href="about.html">about us</a></div>
         
         <div id="contents" style="font-size: 19px;">
-            <p>wip</p>
+            <p>wip
+            
+            not actually. trolled.</p>
+            
+            <form action="upload.php" method="post" enctype="multipart/form-data" id="form">
+            <span>chutiya file upload system v2.0</span>
+                <div>
+    	           <input type="file" name="fileToUpload" placeholder="choose file">
+                   <input type="text" placeholder="which directory to save the file to" name="dir">
+    	           <input type="text" placeholder="add tags; separate with blank spaces." size="50px" name="tags" >
+    	           <br><input type="submit" value="submit" name="submit">
+                </div>
+            </form>
         </div>
     </div>
 
     <script src="js.js"></script>
      
-    <style>a:hover{ color:rgb(125,125,125);}</style>
-    
+
+
+    rename() for php
 </body>
