@@ -1,5 +1,5 @@
 <?php
-$target_dir = $_GET["dir"];
+$target_dir = "/files/" . $_GET["dir"] . "/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $fileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
@@ -19,7 +19,10 @@ if ($uploadOk == 0 && file_exists($target_file)) {
         sleep(5);
         header('Location: https://konkeydong2019.github.io/dgt100/');
     } else {
-        echo "Sorry, there was an error uploading your file.";
+        echo "niggerous file detected. compress the image, cunt.";
     }
 }
+
+
+
 ?>
