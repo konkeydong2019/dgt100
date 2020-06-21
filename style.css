@@ -86,7 +86,7 @@ ul {
     margin-top: 20px;
     width: 94%;
     height: 80%; 
-    /*border: 3px solid rgb(110,110,110); commented out the border 'cause it looks like ASS*/
+    /*border: 3px solid rgb(110,110,110); commented out the border 'cause it doesn't look so good*/
     margin-left: 2%;
     overflow-y: auto;
     overflow-x: hidden;
@@ -117,10 +117,11 @@ input {
     right: 0;
     top: 0;
 }
+
 #img {
     position: absolute;
-    top: 5%;
-    left: 5%;
+    /* left: 7%; */
+    top: 20%;
     max-width: 90%;
     max-height: 90%;
 }
