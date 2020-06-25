@@ -31,7 +31,7 @@ function adjust() {
     }
     
     if(size == "-" || size == "_") {
-        if(width > 150 && width > 150) {
+        if(image.offsetWidth > width && image.offsetHeight > height) {
             image.getAttributeNode("width").value = parseInt(image.offsetWidth) * 0.96;
             image.getAttributeNode("height").value = parseInt(image.offsetHeight) * 0.96;
         }
