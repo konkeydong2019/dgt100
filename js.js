@@ -1,6 +1,6 @@
 const queryString = window.location.search; // get the values of the parameters of dir
 const width = image.offsetWidth
-const height image.offsetHeight
+const height = image.offsetHeight
 console.log(queryString); //get the values of the parameters of dir
 console.log(width)
 console.log(height)
@@ -31,7 +31,7 @@ function adjust() {
     }
     
     if(size == "-" || size == "_") {
-        if(image.offsetWidth > width && image.offsetHeight > height) {
+        if(image.offsetWidth >= width && image.offsetHeight >= height) {
             image.getAttributeNode("width").value = parseInt(image.offsetWidth) * 0.96;
             image.getAttributeNode("height").value = parseInt(image.offsetHeight) * 0.96;
         }
