@@ -1,8 +1,8 @@
-const queryString = window.location.search;
-console.log(queryString);
-const d = new URLSearchParams(queryString).get('dir')
-var rnd = Math.floor(Math.random() * 10);
-var rndSPD = Math.floor(Math.random() * 80);
+const queryString = window.location.search; // get the values of the parameters of dir
+console.log(queryString); //get the values of the parameters of dir
+const d = new URLSearchParams(queryString).get('dir') // get the values of the parameters of dir
+var rnd = Math.floor(Math.random() * 10); // generate a random number to choose a quote
+var rndSPD = Math.floor(Math.random() * 80); // generate a random number to determine the speed of the marquee
 var quotes = ["Congratulations to Ryan Lee for watching the entire first season of Game of Thrones in one sitting.",
               "do you seriously have javascript enabled in your browser?",
               "Tip of the day: ",
@@ -14,6 +14,7 @@ var quotes = ["Congratulations to Ryan Lee for watching the entire first season 
               "there used to be a funny text here",
               "every time you sselect an image, you get a new help text. insane javascript developer."];
 
+// function for adjusting the size of the image when - or + is pressed
 function adjust() {
     var size = event.key
     var image = document.getElementById("img");
@@ -33,11 +34,14 @@ function adjust() {
     }
 }
 
+// set the help text and marquee's speed using the random numbers
 document.getElementById("marquee").innerHTML = quotes[rnd];
 document.getElementById("marquee").getAttributeNode("scrollamount").value = rndSPD;
 
+
+// substitute the value of dir into the src attribute of the img tag when present
 if(d != null) {
-document.getElementById("img").getAttributeNode("src").value = d;
+    document.getElementById("img").getAttributeNode("src").value = d;
 }
     //
 
