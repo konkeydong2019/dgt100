@@ -1,9 +1,7 @@
-const queryString = window.location.search; // get the values of the parameters of dir
+const queryString = window.location.search; // save the value of dir as a constant
 const width = image.offsetWidth
 const height = image.offsetHeight
-console.log(queryString); //get the values of the parameters of dir
-console.log(width)
-console.log(height)
+console.log(queryString); //log the value of dir in the console
 const d = new URLSearchParams(queryString).get('dir') // get the values of the parameters of dir
 var rnd = Math.floor(Math.random() * 10); // generate a random number to choose a quote
 var rndSPD = Math.floor(Math.random() * 80); // generate a random number to determine the speed of the marquee
@@ -31,7 +29,7 @@ function adjust() {
     }
     
     if(size == "-" || size == "_") {
-        if(image.offsetWidth >= width && image.offsetHeight >= height) {
+        if(image.offsetWidth >= 150 && image.offsetHeight >= 150) {
             image.getAttributeNode("width").value = parseInt(image.offsetWidth) * 0.96;
             image.getAttributeNode("height").value = parseInt(image.offsetHeight) * 0.96;
         }
