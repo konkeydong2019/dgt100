@@ -125,8 +125,3 @@ input {
     max-width: 90%;
     max-height: 90%;
 }
-
-#container {
-    position: fixed;
-    margin: 25px;
-}
