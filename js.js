@@ -1,6 +1,7 @@
 const queryString = window.location.search; // save the value of dir as a constant
 console.log(queryString); //log the value of dir in the console
 const d = new URLSearchParams(queryString).get('dir') // get the values of the parameters of dir
+var image = document.getElementById("img");
 var rnd = Math.floor(Math.random() * 10); // generate a random number to choose a quote
 var rndSPD = Math.floor(Math.random() * 80); // generate a random number to determine the speed of the marquee
 var quotes = ["Congratulations to Ryan Lee for watching the entire first season of Game of Thrones in one sitting.",
@@ -17,7 +18,6 @@ var quotes = ["Congratulations to Ryan Lee for watching the entire first season 
 // function for adjusting the size of the image when - or + is pressed
 function adjust() {
     var size = event.key
-    var image = document.getElementById("img");
     
     if(size == "=" || size == "+") {
         if(image.offsetWidth < document.getElementById("med").offsetWidth * 0.8 && image.offsetHeight < document.getElementById("med").offsetHeight * 0.89  ) {
